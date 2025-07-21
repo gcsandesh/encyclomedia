@@ -1,0 +1,10 @@
+import { AuthProvider } from './AuthContext'
+
+interface AppProviderProps {
+  children: React.ReactNode
+}
+const AppProvider = ({ children }: AppProviderProps) => (
+  <AuthProvider>{children}</AuthProvider>
+)
+
+export default AppProvider
