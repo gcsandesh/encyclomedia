@@ -6,12 +6,10 @@ import {
   CardHeader,
   CardTitle
 } from '@/components/ui/card'
-import { useAuth } from '@/contexts/AuthContext'
 import { loginUser } from '@/services/auth'
 import googleG from '@/assets/google-g.png'
 
 const LoginPage = () => {
-  const {} = useAuth()
   async function handleSignIn() {
     await loginUser()
   }
